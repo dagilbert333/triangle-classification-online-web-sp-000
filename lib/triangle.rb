@@ -27,11 +27,11 @@ class Triangle
     raise TriangleError if real_triangle.include?(false)
   end
   
-  class TriangleError < StandardError
-  end
+ 
 end
 
-
+ class TriangleError < StandardError
+end
 
 
 

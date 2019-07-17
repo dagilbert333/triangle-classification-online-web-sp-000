@@ -17,7 +17,7 @@ class Triangle
       :scalene
     else
       if (@side1 <= 0) || (@side2 <= 0) || (@side3 <= 0)
-        TriangleError
+        raise TriangleError
       end
     end
   end

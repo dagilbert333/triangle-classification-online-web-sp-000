@@ -17,6 +17,8 @@ class Triangle
     else 
       if (@side1 <= 0) || (@side2 <= 0) || (@side3 <= 0)
         raise TriangleError
+        rescue TriangleError => error
+          puts error.message
       elsif (@side_1+@side_2 <= @side_3) || (@side_1+@side_3 <= @side_2) || (@side_2+@side_3 <= @side_1)
         raise TriangleError
       end

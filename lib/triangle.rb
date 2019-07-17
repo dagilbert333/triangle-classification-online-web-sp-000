@@ -22,7 +22,11 @@ class Triangle
           puts error.message
         end
       elsif (@side_1+@side_2 <= @side_3) || (@side_1+@side_3 <= @side_2) || (@side_2+@side_3 <= @side_1)
-        raise TriangleError
+        begin 
+          raise TriangleError
+        rescue TriangleError => error
+          puts error.message
+        end
       end
     end
   end

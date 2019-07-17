@@ -32,9 +32,7 @@ class Triangle
   end
   
   class TriangleError < StandardError
-    def message 
-      "You must provide the proper triangle dimensions."
-    end
+    
   end
   
 end
